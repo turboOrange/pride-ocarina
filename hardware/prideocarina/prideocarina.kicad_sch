@@ -2765,6 +2765,12 @@
 		)
 	)
 	(junction
+		(at 240.03 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a645fba-e29f-44e1-ac95-4d0928189228")
+	)
+	(junction
 		(at 59.69 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2779,6 +2785,16 @@
 			(type default)
 		)
 		(uuid "0f93dbb4-e9f6-4232-8f6b-7bae749c01c4")
+	)
+	(wire
+		(pts
+			(xy 240.03 83.82) (xy 240.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "142236c1-4111-4079-8034-87aa2546586d")
 	)
 	(wire
 		(pts
@@ -2852,6 +2868,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 83.82) (xy 240.03 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695e462f-8cf6-418c-914b-cfc34e5d5546")
+	)
+	(wire
+		(pts
 			(xy 52.07 31.75) (xy 57.15 31.75)
 		)
 		(stroke
@@ -2912,6 +2938,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 86.36) (xy 240.03 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1dc6128-2519-4624-8868-481524f976e6")
+	)
+	(wire
+		(pts
 			(xy 185.42 30.48) (xy 190.5 30.48)
 		)
 		(stroke
@@ -2969,6 +3005,28 @@
 			(type default)
 		)
 		(uuid "fb7ecdbb-f4c0-4d4b-b858-acba59b6a1b5")
+	)
+	(global_label "CAP_TOUCH_SEND"
+		(shape output)
+		(at 125.73 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00a7890b-432e-4de9-a1c2-079192787440")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.9929 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "R"
 		(shape input)
@@ -3037,7 +3095,7 @@
 		)
 	)
 	(global_label "LED4"
-		(shape output)
+		(shape input)
 		(at 151.13 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3081,7 +3139,7 @@
 		)
 	)
 	(global_label "LED5"
-		(shape input)
+		(shape output)
 		(at 80.01 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3125,6 +3183,72 @@
 		)
 	)
 	(global_label "SW4"
+		(shape input)
+		(at 151.13 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1fb1d4ed-bf95-46bc-93bc-fdebf22e8aff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B"
+		(shape output)
+		(at 125.73 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ecbe100-cc22-4204-b92a-195d2008556d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.4748 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SW3"
+		(shape input)
+		(at 151.13 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30f738af-ab14-47fc-a60b-786f4499228a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SW4"
 		(shape output)
 		(at 34.29 186.69 0)
 		(fields_autoplaced yes)
@@ -3147,7 +3271,7 @@
 		)
 	)
 	(global_label "LED3"
-		(shape input)
+		(shape output)
 		(at 80.01 69.85 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3301,7 +3425,7 @@
 		)
 	)
 	(global_label "LED4"
-		(shape input)
+		(shape output)
 		(at 80.01 72.39 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3322,8 +3446,30 @@
 			)
 		)
 	)
+	(global_label "LEDCTL2"
+		(shape output)
+		(at 125.73 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ad56917-3b70-4239-a224-3ffc49f913bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.8225 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED1"
-		(shape input)
+		(shape output)
 		(at 80.01 64.77 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3344,6 +3490,50 @@
 			)
 		)
 	)
+	(global_label "SW2"
+		(shape input)
+		(at 151.13 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5def9211-cf50-4371-98ce-00a8856dab17")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LEDCTL0"
+		(shape output)
+		(at 125.73 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "63a8ff3c-21e0-4a8d-a561-5b58a33a318a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.8225 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "R"
 		(shape input)
 		(at 167.64 26.67 0)
@@ -3357,6 +3547,28 @@
 		(uuid "6afda685-476c-4c16-9073-5a435070def9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 171.8952 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SW1"
+		(shape input)
+		(at 151.13 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77ee5b82-8507-4802-909b-b3f80156d273")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,8 +3600,30 @@
 			)
 		)
 	)
-	(global_label "LED2"
+	(global_label "CAP_TOUCH_RECEIVE"
 		(shape output)
+		(at 237.49 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89483e8a-43bc-4c08-90cb-10442ae94677")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 215.0315 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED2"
+		(shape input)
 		(at 82.55 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3406,6 +3640,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LEDCTL1"
+		(shape output)
+		(at 125.73 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c4fbf60-d785-47c5-b7ce-83c0d23979bc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.8225 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3455,7 +3711,7 @@
 		)
 	)
 	(global_label "LED1"
-		(shape output)
+		(shape input)
 		(at 52.07 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3499,7 +3755,7 @@
 		)
 	)
 	(global_label "LED0"
-		(shape output)
+		(shape input)
 		(at 24.13 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3608,6 +3864,28 @@
 			)
 		)
 	)
+	(global_label "G"
+		(shape output)
+		(at 125.73 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aaefa2e0-94f6-436c-bc38-3095ebf8eddf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.4748 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "R"
 		(shape input)
 		(at 67.31 26.67 0)
@@ -3674,9 +3952,9 @@
 			)
 		)
 	)
-	(global_label "CAP_TOUCH"
+	(global_label "SPEAK"
 		(shape output)
-		(at 240.03 81.28 270)
+		(at 125.73 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3684,9 +3962,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b339e9e2-23b6-40bc-ad82-e487093f4e68")
+		(uuid "b8ed9a4a-963b-484f-b371-4ccf85cd0410")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.03 95.0905 90)
+			(at 116.7577 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3696,30 +3974,8 @@
 			)
 		)
 	)
-	(global_label "SW6"
-		(shape output)
-		(at 74.93 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b776c042-d0e0-48d2-b1a8-d535e54f188a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.7856 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED2"
-		(shape input)
+		(shape output)
 		(at 80.01 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3762,8 +4018,30 @@
 			)
 		)
 	)
+	(global_label "SW6"
+		(shape input)
+		(at 151.13 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0778111-36c7-45bd-9365-aa3af3d5780f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED5"
-		(shape output)
+		(shape input)
 		(at 185.42 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3806,6 +4084,28 @@
 			)
 		)
 	)
+	(global_label "CAP_TOUCH_SEND"
+		(shape input)
+		(at 240.03 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da036c6f-f35f-4e1f-821b-b17ff31f58d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.2929 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SW2"
 		(shape output)
 		(at 34.29 154.94 0)
@@ -3824,6 +4124,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAP_TOUCH_RECEIVE"
+		(shape input)
+		(at 125.73 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd66b2b7-736e-4cf9-a9ac-185b5c22a023")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2715 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3850,8 +4172,30 @@
 			)
 		)
 	)
-	(global_label "LED0"
+	(global_label "SW5"
 		(shape input)
+		(at 151.13 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "edcba2b2-f3f5-4314-95e3-c689a711da08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.9856 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED0"
+		(shape output)
 		(at 80.01 62.23 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3873,7 +4217,7 @@
 		)
 	)
 	(global_label "LED3"
-		(shape output)
+		(shape input)
 		(at 119.38 41.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3934,6 +4278,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "R"
+		(shape output)
+		(at 125.73 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa691d93-4dcc-4566-b178-99a0f73a77ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.4748 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4774,6 +5140,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 240.03 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ac45b68-e7a8-49ec-9a1e-b7078bb8122f")
+		(property "Reference" "R8"
+			(at 242.57 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_US"
+			(at 242.57 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 241.046 90.424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 240.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c1a29bb-2b8c-4d61-9154-f47388437b75")
+		)
+		(pin "2"
+			(uuid "c5be3f7f-290e-4405-bef1-b33160cce555")
+		)
+		(instances
+			(project "prideocarina"
+				(path "/4eb6bd5e-567f-446c-a13f-c8d165b1782c"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 135.89 78.74 0)
 		(unit 1)
@@ -4908,72 +5344,6 @@
 			(project "prideocarina"
 				(path "/4eb6bd5e-567f-446c-a13f-c8d165b1782c"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 64.77 170.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77855fe3-54c5-44b0-a44d-42b218cdfd24")
-		(property "Reference" "#PWR017"
-			(at 64.77 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 64.77 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 64.77 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11f9f787-18d1-4732-9498-b4081041e571")
-		)
-		(instances
-			(project "prideocarina"
-				(path "/4eb6bd5e-567f-446c-a13f-c8d165b1782c"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5763,74 +6133,6 @@
 			(project ""
 				(path "/4eb6bd5e-567f-446c-a13f-c8d165b1782c"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 69.85 170.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "989a9c8d-7fb2-4507-96df-ca2c4aee772e")
-		(property "Reference" "SW7"
-			(at 69.85 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 69.85 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 69.85 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5f500089-a31e-45dd-958f-5fd4d1cf0dc6")
-		)
-		(pin "1"
-			(uuid "e4ce88a3-e699-4834-a3c0-8ce26efd3967")
-		)
-		(instances
-			(project "prideocarina"
-				(path "/4eb6bd5e-567f-446c-a13f-c8d165b1782c"
-					(reference "SW7")
 					(unit 1)
 				)
 			)
